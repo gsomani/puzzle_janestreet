@@ -1,0 +1,69 @@
+.subckt  sky130_fd_sc_hd__nor4_2     C      D        Y     A      B     VGND  VPWR  VPB   VNB                       
+.subckt  sky130_fd_sc_hd__or2_2      B      X        A     VPWR   VGND  VPB   VNB                                   
+.subckt  sky130_fd_sc_hd__and2b_2    X      B        A_N   VPWR   VGND  VPB   VNB                                   
+.subckt  sky130_fd_sc_hd__o31ai_2    A1     Y        B1    A3     A2    VGND  VPWR  VPB   VNB                       
+.subckt  sky130_fd_sc_hd__decap_3    VPWR   VGND     VPB   VNB                                                      
+.subckt  sky130_fd_sc_hd__a31o_2     X      B1       A3    A1     A2    VGND  VPWR  VPB   VNB                       
+.subckt  sky130_fd_sc_hd__and3_2     B      X        A     C      VPWR  VGND  VPB   VNB                             
+.subckt  sky130_fd_sc_hd__nand4_2    B      A        Y     D      C     VGND  VPWR  VPB   VNB                       
+.subckt  sky130_fd_sc_hd__or3_2      A      B        X     C      VGND  VPWR  VPB   VNB                             
+.subckt  sky130_fd_sc_hd__xnor2_2    Y      A        B     VGND   VPWR  VPB   VNB                                   
+.subckt  sky130_fd_sc_hd__and4bb_2   A_N    C        B_N   X      D     VGND  VPWR  VPB   VNB                       
+.subckt  sky130_fd_sc_hd__clkbuf_8   X      A        VGND  VPWR   VPB   VNB                                         
+.subckt  sky130_fd_sc_hd__nor3b_2    C_N    Y        A     B      VGND  VPWR  VPB   VNB                             
+.subckt  sky130_fd_sc_hd__mux2_1     S      A1       A0    X      VGND  VPWR  VPB   VNB                             
+.subckt  sky130_fd_sc_hd__a21o_2     X      B1       A1    A2     VGND  VPWR  VPB   VNB                             
+.subckt  sky130_fd_sc_hd__a211oi_2   A2     C1       B1    Y      A1    VPWR  VGND  VPB   VNB                       
+.subckt  sky130_fd_sc_hd__a22oi_2    A1     A2       B1    B2     Y     VPWR  VGND  VPB   VNB                       
+.subckt  sky130_fd_sc_hd__o221a_2    B2     A2       X     B1     C1    A1    VGND  VPWR  VPB   VNB                 
+.subckt  sky130_fd_sc_hd__and4_2     X      C        A     B      D     VGND  VPWR  VPB   VNB                       
+.subckt  sky130_fd_sc_hd__a21oi_2    B1     A2       A1    Y      VGND  VPWR  VPB   VNB                             
+.subckt  sky130_fd_sc_hd__o211a_2    C1     B1       A2    A1     X     VPWR  VGND  VPB   VNB                       
+.subckt  sky130_fd_sc_hd__or4b_2     C      A        X     B      D_N   VPWR  VGND  VPB   VNB                       
+.subckt  sky130_fd_sc_hd__dfrtp_2    Q      RESET_B  D     CLK    VGND  VPWR  VPB   VNB                             
+.subckt  sky130_fd_sc_hd__o2bb2a_2   A1_N   X        A2_N  B2     B1    VGND  VPWR  VPB   VNB                       
+.subckt  sky130_fd_sc_hd__xor2_2     X      B        A     VPWR   VGND  VPB   VNB                                   
+.subckt  sky130_fd_sc_hd__nand2b_2   B      Y        A_N   VGND   VPWR  VPB   VNB                                   
+.subckt  sky130_fd_sc_hd__o211ai_2   A1     A2       B1    Y      C1    VGND  VPWR  VPB   VNB                       
+.subckt  sky130_fd_sc_hd__or4_2      C      A        X     B      D     VPWR  VGND  VPB   VNB                       
+.subckt  sky130_fd_sc_hd__clkbuf_4   X      A        VGND  VPWR   VPB   VNB                                         
+.subckt  sky130_fd_sc_hd__inv_2      A      Y        VPWR  VGND   VPB   VNB                                         
+.subckt  sky130_fd_sc_hd__a221oi_2   B2     C1       A2    A1     B1    Y     VGND  VPWR  VPB   VNB                 
+.subckt  sky130_fd_sc_hd__nand2_2    Y      A        B     VGND   VPWR  VPB   VNB                                   
+.subckt  sky130_fd_sc_hd__a21bo_2    B1_N   A2       X     A1     VGND  VPWR  VPB   VNB                             
+.subckt  sky130_fd_sc_hd__a31oi_2    A3     B1       Y     A1     A2    VPWR  VGND  VPB   VNB                       
+.subckt  sky130_fd_sc_hd__o311a_2    X      A2       A3    A1     B1    C1    VPWR  VGND  VPB   VNB                 
+.subckt  sky130_fd_sc_hd__o32a_2     B1     B2       A3    A2     A1    X     VGND  VPWR  VPB   VNB                 
+.subckt  sky130_fd_sc_hd__a21boi_2   B1_N   A2       A1    Y      VPWR  VGND  VPB   VNB                             
+.subckt  sky130_fd_sc_hd__o22a_2     A2     X        B1    A1     B2    VGND  VPWR  VPB   VNB                       
+.subckt  sky130_fd_sc_hd__and4b_2    X      A_N      D     C      B     VPWR  VGND  VPB   VNB                       
+.subckt  sky130_fd_sc_hd__nor3_2     C      Y        A     B      VGND  VPWR  VPB   VNB                             
+.subckt  sky130_fd_sc_hd__a221o_2    X      B1       A1    B2     A2    VGND  VPWR  C1    VPB   VNB                 
+.subckt  sky130_fd_sc_hd__o21a_2     A1     B1       A2    X      VGND  VPWR  VPB   VNB                             
+.subckt  sky130_fd_sc_hd__and2_2     A      X        B     VPWR   VGND  VPB   VNB                                   
+.subckt  sky130_fd_sc_hd__a211o_2    X      A2       A1    B1     C1    VGND  VPWR  VPB   VNB                       
+.subckt  sky130_fd_sc_hd__dfxtp_2    Q      CLK      D     VPWR   VGND  VPB   VNB                                   
+.subckt  sky130_fd_sc_hd__buf_2      VPWR   VGND     X     A      VPB   VNB                                         
+.subckt  sky130_fd_sc_hd__or3b_2     A      B        C_N   X      VPWR  VGND  VPB   VNB                             
+.subckt  sky130_fd_sc_hd__o21bai_2   B1_N   Y        A2    A1     VGND  VPWR  VPB   VNB                             
+.subckt  sky130_fd_sc_hd__a41oi_2    A4     A3       A2    B1     A1    Y     VPWR  VGND  VPB   VNB                 
+.subckt  sky130_fd_sc_hd__a32o_2     B2     X        A2    A3     A1    B1    VGND  VPWR  VPB   VNB                 
+.subckt  sky130_fd_sc_hd__a22o_2     A1     A2       X     B2     B1    VPWR  VGND  VPB   VNB                       
+.subckt  sky130_fd_sc_hd__diode_2    DIODE  VGND     VPWR  VPB    VNB                                               
+.subckt  sky130_fd_sc_hd__a311o_2    X      C1       B1    A1     A2    A3    VGND  VPWR  VPB   VNB                 
+.subckt  sky130_fd_sc_hd__dfstp_2    Q      D        VPWR  SET_B  CLK   VGND  VPB   VNB                             
+.subckt  sky130_fd_sc_hd__clkbuf_16  X      A        VGND  VPWR   VPB   VNB                                         
+.subckt  sky130_fd_sc_hd__o31a_2     X      A1       A2    B1     A3    VGND  VPWR  VPB   VNB                       
+.subckt  sky130_fd_sc_hd__and3b_2    B      X        A_N   C      VGND  VPWR  VPB   VNB                             
+.subckt  sky130_fd_sc_hd__nor2_2     B      Y        A     VGND   VPWR  VPB   VNB                                   
+.subckt  sky130_fd_sc_hd__nor4b_2    D_N    Y        C     A      B     VGND  VPWR  VPB   VNB                       
+.subckt  sky130_fd_sc_hd__conb_1     LO     HI       VGND  VPWR   VPB   VNB                                         
+.subckt  sky130_fd_sc_hd__o22ai_2    B2     B1       Y     A1     A2    VGND  VPWR  VPB   VNB                       
+.subckt  sky130_fd_sc_hd__o21ai_2    B1     Y        A2    A1     VGND  VPWR  VPB   VNB                             
+.subckt  sky130_fd_sc_hd__nand3b_2   Y      C        A_N   B      VGND  VPWR  VPB   VNB                             
+.subckt  sky130_fd_sc_hd__a2111oi_2  D1     C1       A2    A1     Y     B1    VGND  VPWR  VPB   VNB                 
+.subckt  sky130_fd_sc_hd__nand3_2    A      Y        B     C      VGND  VPWR  VPB   VNB                             
+.subckt  sky130_fd_sc_hd__o32ai_2    A1     B1       A2    A3     Y     B2    VGND  VPWR  VPB   VNB                 
+.subckt  sky130_fd_sc_hd__o21ba_2    B1_N   A1       X     A2     VGND  VPWR  VPB   VNB                             
+.subckt  sky130_fd_sc_hd__or4bb_2    A      X        B     D_N    C_N   VPWR  VGND  VPB   VNB                       
+.subckt  puzzle                      I      O[0]     O[1]  O[2]   O[3]  O[4]  O[5]  O[6]  O[7]  clk  enable  rst_n  success
