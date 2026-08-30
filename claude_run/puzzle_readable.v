@@ -181,37 +181,6 @@ module puzzle (
 
     wire sky130_fd_sc_hd__buf_2_0_X;
 
-    wire sky130_fd_sc_hd__clkbuf_4_0_X;
-    wire sky130_fd_sc_hd__clkbuf_4_10_X;
-    wire sky130_fd_sc_hd__clkbuf_4_11_X;
-    wire sky130_fd_sc_hd__clkbuf_4_12_X;
-    wire sky130_fd_sc_hd__clkbuf_4_13_X;
-    wire sky130_fd_sc_hd__clkbuf_4_14_X;
-    wire sky130_fd_sc_hd__clkbuf_4_1_X;
-    wire sky130_fd_sc_hd__clkbuf_4_2_X;
-    wire sky130_fd_sc_hd__clkbuf_4_3_X;
-    wire sky130_fd_sc_hd__clkbuf_4_4_X;
-    wire sky130_fd_sc_hd__clkbuf_4_5_X;
-    wire sky130_fd_sc_hd__clkbuf_4_6_X;
-    wire sky130_fd_sc_hd__clkbuf_4_7_X;
-    wire sky130_fd_sc_hd__clkbuf_4_8_X;
-    wire sky130_fd_sc_hd__clkbuf_4_9_A;
-    wire sky130_fd_sc_hd__clkbuf_4_9_X;
-
-    wire sky130_fd_sc_hd__clkbuf_8_0_X;
-    wire sky130_fd_sc_hd__clkbuf_8_10_X;
-    wire sky130_fd_sc_hd__clkbuf_8_11_X;
-    wire sky130_fd_sc_hd__clkbuf_8_1_X;
-    wire sky130_fd_sc_hd__clkbuf_8_2_X;
-    wire sky130_fd_sc_hd__clkbuf_8_3_X;
-    wire sky130_fd_sc_hd__clkbuf_8_4_X;
-    wire sky130_fd_sc_hd__clkbuf_8_5_X;
-    wire sky130_fd_sc_hd__clkbuf_8_6_X;
-    wire sky130_fd_sc_hd__clkbuf_8_7_X;
-    wire sky130_fd_sc_hd__clkbuf_8_8_X;
-    wire sky130_fd_sc_hd__clkbuf_8_9_A;
-    wire sky130_fd_sc_hd__clkbuf_8_9_X;
-
     wire sky130_fd_sc_hd__conb_1_0_HI;
     wire sky130_fd_sc_hd__conb_1_0_LO;
     wire sky130_fd_sc_hd__conb_1_1_HI;
@@ -238,16 +207,13 @@ module puzzle (
     wire sky130_fd_sc_hd__dfrtp_2_67_D;
     wire sky130_fd_sc_hd__dfrtp_2_68_D;
     wire sky130_fd_sc_hd__dfrtp_2_70_D;
-    wire sky130_fd_sc_hd__dfrtp_2_8_CLK;
 
     wire sky130_fd_sc_hd__dfstp_2_0_D;
     wire sky130_fd_sc_hd__dfstp_2_2_D;
 
     wire sky130_fd_sc_hd__dfxtp_2_0_D;
     wire sky130_fd_sc_hd__dfxtp_2_1_D;
-    wire sky130_fd_sc_hd__dfxtp_2_2_CLK;
     wire sky130_fd_sc_hd__dfxtp_2_2_D;
-    wire sky130_fd_sc_hd__dfxtp_2_3_CLK;
     wire sky130_fd_sc_hd__dfxtp_2_3_D;
 
     wire sky130_fd_sc_hd__inv_2_0_Y;
@@ -887,7 +853,6 @@ module puzzle (
                                            & (~sky130_fd_sc_hd__xor2_2_0_B)
                                            & sky130_fd_sc_hd__xor2_2_9_A
                                            & sky130_fd_sc_hd__xor2_2_4_A;  // sky130_fd_sc_hd__and4bb_2_0 : sky130_fd_sc_hd__and4bb_2
-    assign sky130_fd_sc_hd__clkbuf_8_9_A = clk;  // sky130_fd_sc_hd__clkbuf_16_0 : sky130_fd_sc_hd__clkbuf_16
     assign sky130_fd_sc_hd__inv_2_13_Y = ~sky130_fd_sc_hd__or2_2_8_B;  // sky130_fd_sc_hd__inv_2_13 : sky130_fd_sc_hd__inv_2
     assign sky130_fd_sc_hd__inv_2_14_Y = ~sky130_fd_sc_hd__or2_2_8_B;  // sky130_fd_sc_hd__inv_2_14 : sky130_fd_sc_hd__inv_2
     assign sky130_fd_sc_hd__inv_2_15_Y = ~sky130_fd_sc_hd__or3b_2_0_A;  // sky130_fd_sc_hd__inv_2_15 : sky130_fd_sc_hd__inv_2
@@ -1105,25 +1070,9 @@ module puzzle (
                                          & sky130_fd_sc_hd__or4_2_4_C
                                          & sky130_fd_sc_hd__inv_2_7_A;  // sky130_fd_sc_hd__and4_2_7 : sky130_fd_sc_hd__and4_2
     assign sky130_fd_sc_hd__buf_2_0_X = sky130_fd_sc_hd__or4_2_4_X;  // sky130_fd_sc_hd__buf_2_0 : sky130_fd_sc_hd__buf_2
-    assign sky130_fd_sc_hd__clkbuf_4_9_A = sky130_fd_sc_hd__clkbuf_8_9_A;  // sky130_fd_sc_hd__clkbuf_8_13 : sky130_fd_sc_hd__clkbuf_8
-    assign sky130_fd_sc_hd__clkbuf_8_0_X = sky130_fd_sc_hd__clkbuf_8_9_A;  // sky130_fd_sc_hd__clkbuf_8_0 : sky130_fd_sc_hd__clkbuf_8
-    assign sky130_fd_sc_hd__clkbuf_8_10_X = sky130_fd_sc_hd__clkbuf_8_9_A;  // sky130_fd_sc_hd__clkbuf_8_10 : sky130_fd_sc_hd__clkbuf_8
-    assign sky130_fd_sc_hd__clkbuf_8_11_X = sky130_fd_sc_hd__clkbuf_8_9_A;  // sky130_fd_sc_hd__clkbuf_8_11 : sky130_fd_sc_hd__clkbuf_8
-    assign sky130_fd_sc_hd__clkbuf_8_1_X = sky130_fd_sc_hd__clkbuf_8_9_A;  // sky130_fd_sc_hd__clkbuf_8_1 : sky130_fd_sc_hd__clkbuf_8
-    assign sky130_fd_sc_hd__clkbuf_8_2_X = sky130_fd_sc_hd__clkbuf_8_9_A;  // sky130_fd_sc_hd__clkbuf_8_2 : sky130_fd_sc_hd__clkbuf_8
-    assign sky130_fd_sc_hd__clkbuf_8_3_X = sky130_fd_sc_hd__clkbuf_8_9_A;  // sky130_fd_sc_hd__clkbuf_8_3 : sky130_fd_sc_hd__clkbuf_8
-    assign sky130_fd_sc_hd__clkbuf_8_4_X = sky130_fd_sc_hd__clkbuf_8_9_A;  // sky130_fd_sc_hd__clkbuf_8_4 : sky130_fd_sc_hd__clkbuf_8
-    assign sky130_fd_sc_hd__clkbuf_8_5_X = sky130_fd_sc_hd__clkbuf_8_9_A;  // sky130_fd_sc_hd__clkbuf_8_5 : sky130_fd_sc_hd__clkbuf_8
-    assign sky130_fd_sc_hd__clkbuf_8_6_X = sky130_fd_sc_hd__clkbuf_8_9_A;  // sky130_fd_sc_hd__clkbuf_8_6 : sky130_fd_sc_hd__clkbuf_8
-    assign sky130_fd_sc_hd__clkbuf_8_7_X = sky130_fd_sc_hd__clkbuf_8_9_A;  // sky130_fd_sc_hd__clkbuf_8_7 : sky130_fd_sc_hd__clkbuf_8
-    assign sky130_fd_sc_hd__clkbuf_8_8_X = sky130_fd_sc_hd__clkbuf_8_9_A;  // sky130_fd_sc_hd__clkbuf_8_8 : sky130_fd_sc_hd__clkbuf_8
-    assign sky130_fd_sc_hd__clkbuf_8_9_X = sky130_fd_sc_hd__clkbuf_8_9_A;  // sky130_fd_sc_hd__clkbuf_8_9 : sky130_fd_sc_hd__clkbuf_8
-    assign sky130_fd_sc_hd__dfrtp_2_8_CLK = sky130_fd_sc_hd__clkbuf_8_9_A;  // sky130_fd_sc_hd__clkbuf_8_15 : sky130_fd_sc_hd__clkbuf_8
     assign sky130_fd_sc_hd__dfxtp_2_0_D = ~((sky130_fd_sc_hd__inv_2_21_Y & sky130_fd_sc_hd__nand3_2_1_Y) | (~sky130_fd_sc_hd__or2_2_11_B));  // sky130_fd_sc_hd__a21boi_2_2 : sky130_fd_sc_hd__a21boi_2
     assign sky130_fd_sc_hd__dfxtp_2_1_D = ~((sky130_fd_sc_hd__and3_2_25_C & sky130_fd_sc_hd__xnor2_2_28_Y) | (~sky130_fd_sc_hd__or2_2_11_B));  // sky130_fd_sc_hd__a21boi_2_1 : sky130_fd_sc_hd__a21boi_2
-    assign sky130_fd_sc_hd__dfxtp_2_2_CLK = sky130_fd_sc_hd__clkbuf_8_9_A;  // sky130_fd_sc_hd__clkbuf_8_12 : sky130_fd_sc_hd__clkbuf_8
     assign sky130_fd_sc_hd__dfxtp_2_2_D = ~((sky130_fd_sc_hd__or3b_2_0_A & sky130_fd_sc_hd__and3_2_25_C) | (~sky130_fd_sc_hd__or2_2_11_B));  // sky130_fd_sc_hd__a21boi_2_3 : sky130_fd_sc_hd__a21boi_2
-    assign sky130_fd_sc_hd__dfxtp_2_3_CLK = sky130_fd_sc_hd__clkbuf_8_9_A;  // sky130_fd_sc_hd__clkbuf_8_14 : sky130_fd_sc_hd__clkbuf_8
     assign sky130_fd_sc_hd__dfxtp_2_3_D = (sky130_fd_sc_hd__or2_2_8_B | sky130_fd_sc_hd__nand3_2_1_Y)
                                           & sky130_fd_sc_hd__a21o_2_17_X
                                           & sky130_fd_sc_hd__or2_2_11_B;  // sky130_fd_sc_hd__o211a_2_11 : sky130_fd_sc_hd__o211a_2
@@ -1296,21 +1245,6 @@ module puzzle (
                                          & sky130_fd_sc_hd__and4_2_6_B
                                          & sky130_fd_sc_hd__and4_2_6_C
                                          & sky130_fd_sc_hd__and4_2_6_D;  // sky130_fd_sc_hd__and4_2_6 : sky130_fd_sc_hd__and4_2
-    assign sky130_fd_sc_hd__clkbuf_4_0_X = sky130_fd_sc_hd__clkbuf_8_1_X;  // sky130_fd_sc_hd__clkbuf_4_0 : sky130_fd_sc_hd__clkbuf_4
-    assign sky130_fd_sc_hd__clkbuf_4_10_X = sky130_fd_sc_hd__clkbuf_8_9_X;  // sky130_fd_sc_hd__clkbuf_4_10 : sky130_fd_sc_hd__clkbuf_4
-    assign sky130_fd_sc_hd__clkbuf_4_11_X = sky130_fd_sc_hd__clkbuf_8_11_X;  // sky130_fd_sc_hd__clkbuf_4_11 : sky130_fd_sc_hd__clkbuf_4
-    assign sky130_fd_sc_hd__clkbuf_4_12_X = sky130_fd_sc_hd__clkbuf_8_10_X;  // sky130_fd_sc_hd__clkbuf_4_12 : sky130_fd_sc_hd__clkbuf_4
-    assign sky130_fd_sc_hd__clkbuf_4_13_X = sky130_fd_sc_hd__dfxtp_2_2_CLK;  // sky130_fd_sc_hd__clkbuf_4_13 : sky130_fd_sc_hd__clkbuf_4
-    assign sky130_fd_sc_hd__clkbuf_4_14_X = sky130_fd_sc_hd__dfrtp_2_8_CLK;  // sky130_fd_sc_hd__clkbuf_4_14 : sky130_fd_sc_hd__clkbuf_4
-    assign sky130_fd_sc_hd__clkbuf_4_1_X = sky130_fd_sc_hd__clkbuf_8_0_X;  // sky130_fd_sc_hd__clkbuf_4_1 : sky130_fd_sc_hd__clkbuf_4
-    assign sky130_fd_sc_hd__clkbuf_4_2_X = sky130_fd_sc_hd__clkbuf_8_4_X;  // sky130_fd_sc_hd__clkbuf_4_2 : sky130_fd_sc_hd__clkbuf_4
-    assign sky130_fd_sc_hd__clkbuf_4_3_X = sky130_fd_sc_hd__clkbuf_8_3_X;  // sky130_fd_sc_hd__clkbuf_4_3 : sky130_fd_sc_hd__clkbuf_4
-    assign sky130_fd_sc_hd__clkbuf_4_4_X = sky130_fd_sc_hd__clkbuf_8_2_X;  // sky130_fd_sc_hd__clkbuf_4_4 : sky130_fd_sc_hd__clkbuf_4
-    assign sky130_fd_sc_hd__clkbuf_4_5_X = sky130_fd_sc_hd__clkbuf_8_5_X;  // sky130_fd_sc_hd__clkbuf_4_5 : sky130_fd_sc_hd__clkbuf_4
-    assign sky130_fd_sc_hd__clkbuf_4_6_X = sky130_fd_sc_hd__clkbuf_8_6_X;  // sky130_fd_sc_hd__clkbuf_4_6 : sky130_fd_sc_hd__clkbuf_4
-    assign sky130_fd_sc_hd__clkbuf_4_7_X = sky130_fd_sc_hd__clkbuf_8_7_X;  // sky130_fd_sc_hd__clkbuf_4_7 : sky130_fd_sc_hd__clkbuf_4
-    assign sky130_fd_sc_hd__clkbuf_4_8_X = sky130_fd_sc_hd__clkbuf_8_8_X;  // sky130_fd_sc_hd__clkbuf_4_8 : sky130_fd_sc_hd__clkbuf_4
-    assign sky130_fd_sc_hd__clkbuf_4_9_X = sky130_fd_sc_hd__clkbuf_4_9_A;  // sky130_fd_sc_hd__clkbuf_4_9 : sky130_fd_sc_hd__clkbuf_4
     assign sky130_fd_sc_hd__dfrtp_2_43_D = ~((sky130_fd_sc_hd__inv_2_7_A & sky130_fd_sc_hd__inv_2_9_A) | sky130_fd_sc_hd__a21oi_2_13_Y | sky130_fd_sc_hd__xor2_2_11_B);  // sky130_fd_sc_hd__a211oi_2_0 : sky130_fd_sc_hd__a211oi_2
     assign sky130_fd_sc_hd__dfrtp_2_45_D = ~((sky130_fd_sc_hd__inv_2_7_A & sky130_fd_sc_hd__inv_2_9_A) | (sky130_fd_sc_hd__and4_2_7_X & sky130_fd_sc_hd__or4_2_4_D) | sky130_fd_sc_hd__a41oi_2_0_Y);  // sky130_fd_sc_hd__a221oi_2_0 : sky130_fd_sc_hd__a221oi_2
     assign sky130_fd_sc_hd__dfrtp_2_57_D = ~((~sky130_fd_sc_hd__o21a_2_19_A1) & sky130_fd_sc_hd__nand4_2_7_Y);  // sky130_fd_sc_hd__nand2b_2_14 : sky130_fd_sc_hd__nand2b_2
@@ -1967,460 +1901,460 @@ module puzzle (
                                          & sky130_fd_sc_hd__or4_2_2_X;  // sky130_fd_sc_hd__o21a_2_9 : sky130_fd_sc_hd__o21a_2
 
 
-    always @(posedge sky130_fd_sc_hd__dfxtp_2_3_CLK) begin
+    always @(posedge clk) begin
         sky130_fd_sc_hd__or2_2_8_B <= sky130_fd_sc_hd__dfxtp_2_0_D;
     end
 
-    always @(posedge sky130_fd_sc_hd__dfxtp_2_2_CLK) begin
+    always @(posedge clk) begin
         sky130_fd_sc_hd__or2_2_9_A <= sky130_fd_sc_hd__dfxtp_2_1_D;
     end
 
-    always @(posedge sky130_fd_sc_hd__dfxtp_2_2_CLK) begin
+    always @(posedge clk) begin
         sky130_fd_sc_hd__or3b_2_0_A <= sky130_fd_sc_hd__dfxtp_2_2_D;
     end
 
-    always @(posedge sky130_fd_sc_hd__dfxtp_2_3_CLK) begin
+    always @(posedge clk) begin
         sky130_fd_sc_hd__or2_2_9_B <= sky130_fd_sc_hd__dfxtp_2_3_D;
     end
 
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_9_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__nand4_2_9_C <= 1'b0;
         else       sky130_fd_sc_hd__nand4_2_9_C <= sky130_fd_sc_hd__o21a_2_21_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_11_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__o21a_2_27_A1 <= 1'b0;
         else       sky130_fd_sc_hd__o21a_2_27_A1 <= sky130_fd_sc_hd__dfrtp_2_70_D;
     end
 
-    always @(posedge sky130_fd_sc_hd__dfxtp_2_2_CLK or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) success <= 1'b0;
         else       success <= sky130_fd_sc_hd__a32o_2_4_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_8_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__nand4_2_7_C <= 1'b0;
         else       sky130_fd_sc_hd__nand4_2_7_C <= sky130_fd_sc_hd__o21a_2_19_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__dfxtp_2_2_CLK or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__a32o_2_3_B1 <= 1'b0;
         else       sky130_fd_sc_hd__a32o_2_3_B1 <= sky130_fd_sc_hd__a32o_2_3_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_9_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__nand4_2_8_C <= 1'b0;
         else       sky130_fd_sc_hd__nand4_2_8_C <= sky130_fd_sc_hd__o21a_2_23_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__dfxtp_2_3_CLK or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__or4_2_9_A <= 1'b0;
         else       sky130_fd_sc_hd__or4_2_9_A <= sky130_fd_sc_hd__a21o_2_18_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_7_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__xor2_2_19_A <= 1'b0;
         else       sky130_fd_sc_hd__xor2_2_19_A <= sky130_fd_sc_hd__o22a_2_3_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__dfxtp_2_2_CLK or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__or2_2_11_B <= 1'b0;
         else       sky130_fd_sc_hd__or2_2_11_B <= sky130_fd_sc_hd__or2_2_11_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_11_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__inv_2_20_A <= 1'b0;
         else       sky130_fd_sc_hd__inv_2_20_A <= sky130_fd_sc_hd__o21a_2_26_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_7_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__xor2_2_19_B <= 1'b0;
         else       sky130_fd_sc_hd__xor2_2_19_B <= sky130_fd_sc_hd__a221o_2_2_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_5_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__mux2_1_9_A0 <= 1'b0;
         else       sky130_fd_sc_hd__mux2_1_9_A0 <= sky130_fd_sc_hd__mux2_1_9_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_11_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__nand4_2_13_C <= 1'b0;
         else       sky130_fd_sc_hd__nand4_2_13_C <= sky130_fd_sc_hd__o21a_2_25_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__dfxtp_2_3_CLK or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__inv_2_18_A <= 1'b0;
         else       sky130_fd_sc_hd__inv_2_18_A <= sky130_fd_sc_hd__o21a_2_20_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_4_9_A or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__or4_2_5_A <= 1'b0;
         else       sky130_fd_sc_hd__or4_2_5_A <= sky130_fd_sc_hd__a21o_2_13_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_2_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__mux2_1_8_A1 <= 1'b0;
         else       sky130_fd_sc_hd__mux2_1_8_A1 <= sky130_fd_sc_hd__mux2_1_14_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_8_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__a22o_2_2_A2 <= 1'b0;
         else       sky130_fd_sc_hd__a22o_2_2_A2 <= sky130_fd_sc_hd__mux2_1_13_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_11_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__nand4_2_12_C <= 1'b0;
         else       sky130_fd_sc_hd__nand4_2_12_C <= sky130_fd_sc_hd__o21a_2_27_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_9_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__o21a_2_23_A1 <= 1'b0;
         else       sky130_fd_sc_hd__o21a_2_23_A1 <= sky130_fd_sc_hd__dfrtp_2_63_D;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_3_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__and4_2_3_C <= 1'b0;
         else       sky130_fd_sc_hd__and4_2_3_C <= sky130_fd_sc_hd__xnor2_2_11_Y;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_6_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__mux2_1_15_A0 <= 1'b0;
         else       sky130_fd_sc_hd__mux2_1_15_A0 <= sky130_fd_sc_hd__mux2_1_15_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_5_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__mux2_1_19_A1 <= 1'b0;
         else       sky130_fd_sc_hd__mux2_1_19_A1 <= sky130_fd_sc_hd__mux2_1_18_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_10_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__nand4_2_11_C <= 1'b0;
         else       sky130_fd_sc_hd__nand4_2_11_C <= sky130_fd_sc_hd__o21a_2_24_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_11_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__o21a_2_28_A1 <= 1'b0;
         else       sky130_fd_sc_hd__o21a_2_28_A1 <= sky130_fd_sc_hd__dfrtp_2_64_D;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_2_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__nand4_2_5_C <= 1'b0;
         else       sky130_fd_sc_hd__nand4_2_5_C <= sky130_fd_sc_hd__o21a_2_30_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_2_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__o21a_2_30_A1 <= 1'b0;
         else       sky130_fd_sc_hd__o21a_2_30_A1 <= sky130_fd_sc_hd__nand2b_2_4_Y;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_3_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__nor3_2_2_A <= 1'b0;
         else       sky130_fd_sc_hd__nor3_2_2_A <= sky130_fd_sc_hd__o21a_2_12_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_5_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__or4_2_4_B <= 1'b0;
         else       sky130_fd_sc_hd__or4_2_4_B <= sky130_fd_sc_hd__dfrtp_2_43_D;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_6_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__mux2_1_9_A1 <= 1'b0;
         else       sky130_fd_sc_hd__mux2_1_9_A1 <= sky130_fd_sc_hd__mux2_1_17_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_9_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__inv_2_19_A <= 1'b0;
         else       sky130_fd_sc_hd__inv_2_19_A <= sky130_fd_sc_hd__o21a_2_22_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__dfxtp_2_3_CLK or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__inv_2_17_A <= 1'b0;
         else       sky130_fd_sc_hd__inv_2_17_A <= sky130_fd_sc_hd__o21a_2_29_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_4_9_A or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__inv_2_16_A <= 1'b0;
         else       sky130_fd_sc_hd__inv_2_16_A <= sky130_fd_sc_hd__o21a_2_17_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__dfrtp_2_8_CLK or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__or3_2_8_C <= 1'b0;
         else       sky130_fd_sc_hd__or3_2_8_C <= sky130_fd_sc_hd__xor2_2_10_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_1_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__and2b_2_3_B <= 1'b0;
         else       sky130_fd_sc_hd__and2b_2_3_B <= sky130_fd_sc_hd__nand2b_2_2_Y;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_2_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__mux2_1_12_A1 <= 1'b0;
         else       sky130_fd_sc_hd__mux2_1_12_A1 <= sky130_fd_sc_hd__mux2_1_10_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_10_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__o21a_2_21_A1 <= 1'b0;
         else       sky130_fd_sc_hd__o21a_2_21_A1 <= sky130_fd_sc_hd__dfrtp_2_66_D;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_9_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__or4_2_7_A <= 1'b0;
         else       sky130_fd_sc_hd__or4_2_7_A <= sky130_fd_sc_hd__a21o_2_14_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_8_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__nand4_2_6_C <= 1'b0;
         else       sky130_fd_sc_hd__nand4_2_6_C <= sky130_fd_sc_hd__o21a_2_18_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_5_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__or4_2_4_A <= 1'b0;
         else       sky130_fd_sc_hd__or4_2_4_A <= sky130_fd_sc_hd__nor2_2_31_Y;
     end
 
-    always @(posedge sky130_fd_sc_hd__dfrtp_2_8_CLK or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__or3_2_8_A <= 1'b0;
         else       sky130_fd_sc_hd__or3_2_8_A <= sky130_fd_sc_hd__nor2_2_30_Y;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_1_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__o21a_2_8_A1 <= 1'b0;
         else       sky130_fd_sc_hd__o21a_2_8_A1 <= sky130_fd_sc_hd__nand2b_2_3_Y;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_2_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__mux2_1_8_A0 <= 1'b0;
         else       sky130_fd_sc_hd__mux2_1_8_A0 <= sky130_fd_sc_hd__mux2_1_8_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_11_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__o21a_2_24_A1 <= 1'b0;
         else       sky130_fd_sc_hd__o21a_2_24_A1 <= sky130_fd_sc_hd__dfrtp_2_67_D;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_4_9_A or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__nand4_2_4_C <= 1'b0;
         else       sky130_fd_sc_hd__nand4_2_4_C <= sky130_fd_sc_hd__o21a_2_16_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_5_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__or4_2_4_D <= 1'b0;
         else       sky130_fd_sc_hd__or4_2_4_D <= sky130_fd_sc_hd__dfrtp_2_45_D;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_10_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__nand4_2_10_C <= 1'b0;
         else       sky130_fd_sc_hd__nand4_2_10_C <= sky130_fd_sc_hd__o21a_2_28_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__dfrtp_2_8_CLK or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__and4_2_3_A <= 1'b0;
         else       sky130_fd_sc_hd__and4_2_3_A <= sky130_fd_sc_hd__a32o_2_2_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_0_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__or4_2_2_A <= 1'b0;
         else       sky130_fd_sc_hd__or4_2_2_A <= sky130_fd_sc_hd__a21o_2_1_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_10_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__o21a_2_25_A1 <= 1'b0;
         else       sky130_fd_sc_hd__o21a_2_25_A1 <= sky130_fd_sc_hd__dfrtp_2_68_D;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_8_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__o21a_2_19_A1 <= 1'b0;
         else       sky130_fd_sc_hd__o21a_2_19_A1 <= sky130_fd_sc_hd__dfrtp_2_57_D;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_2_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__mux2_1_16_A0 <= 1'b0;
         else       sky130_fd_sc_hd__mux2_1_16_A0 <= sky130_fd_sc_hd__mux2_1_16_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_5_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__or4_2_4_C <= 1'b0;
         else       sky130_fd_sc_hd__or4_2_4_C <= sky130_fd_sc_hd__xor2_2_11_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_9_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__or4_2_8_A <= 1'b0;
         else       sky130_fd_sc_hd__or4_2_8_A <= sky130_fd_sc_hd__a21o_2_15_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_3_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__and4_2_3_B <= 1'b0;
         else       sky130_fd_sc_hd__and4_2_3_B <= sky130_fd_sc_hd__dfrtp_2_25_D;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_0_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__o21a_2_4_A1 <= 1'b0;
         else       sky130_fd_sc_hd__o21a_2_4_A1 <= sky130_fd_sc_hd__nand2b_2_1_Y;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_8_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__or2_2_11_A <= 1'b0;
         else       sky130_fd_sc_hd__or2_2_11_A <= sky130_fd_sc_hd__a31o_2_13_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_4_9_A or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__o21a_2_18_A1 <= 1'b0;
         else       sky130_fd_sc_hd__o21a_2_18_A1 <= sky130_fd_sc_hd__dfrtp_2_58_D;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_6_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__mux2_1_12_A0 <= 1'b0;
         else       sky130_fd_sc_hd__mux2_1_12_A0 <= sky130_fd_sc_hd__mux2_1_12_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_10_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__or4_2_6_A <= 1'b0;
         else       sky130_fd_sc_hd__or4_2_6_A <= sky130_fd_sc_hd__a21o_2_16_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_4_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__xor2_2_0_B <= 1'b0;
         else       sky130_fd_sc_hd__xor2_2_0_B <= sky130_fd_sc_hd__o211a_2_7_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_7_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__xor2_2_14_B <= 1'b0;
         else       sky130_fd_sc_hd__xor2_2_14_B <= sky130_fd_sc_hd__a221o_2_4_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_3_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__or3_2_8_B <= 1'b0;
         else       sky130_fd_sc_hd__or3_2_8_B <= sky130_fd_sc_hd__o21a_2_11_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_4_9_A or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__o21a_2_16_A1 <= 1'b0;
         else       sky130_fd_sc_hd__o21a_2_16_A1 <= sky130_fd_sc_hd__dfrtp_2_59_D;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_6_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__inv_2_11_A <= 1'b0;
         else       sky130_fd_sc_hd__inv_2_11_A <= sky130_fd_sc_hd__a31o_2_12_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_3_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__xor2_2_7_A <= 1'b0;
         else       sky130_fd_sc_hd__xor2_2_7_A <= sky130_fd_sc_hd__mux2_1_5_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_4_9_A or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__a22o_2_4_B2 <= 1'b0;
         else       sky130_fd_sc_hd__a22o_2_4_B2 <= sky130_fd_sc_hd__a31o_2_14_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_4_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__or2_2_7_A <= 1'b0;
         else       sky130_fd_sc_hd__or2_2_7_A <= sky130_fd_sc_hd__a22o_2_1_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_6_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__a22o_2_2_B2 <= 1'b0;
         else       sky130_fd_sc_hd__a22o_2_2_B2 <= sky130_fd_sc_hd__mux2_1_11_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_4_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__inv_2_6_A <= 1'b0;
         else       sky130_fd_sc_hd__inv_2_6_A <= sky130_fd_sc_hd__a31o_2_11_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_4_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__xor2_2_9_A <= 1'b0;
         else       sky130_fd_sc_hd__xor2_2_9_A <= sky130_fd_sc_hd__xor2_2_9_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_8_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__mux2_1_19_A0 <= 1'b0;
         else       sky130_fd_sc_hd__mux2_1_19_A0 <= sky130_fd_sc_hd__mux2_1_19_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_4_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__xor2_2_4_A <= 1'b0;
         else       sky130_fd_sc_hd__xor2_2_4_A <= sky130_fd_sc_hd__o311a_2_1_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_4_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__inv_2_8_A <= 1'b0;
         else       sky130_fd_sc_hd__inv_2_8_A <= sky130_fd_sc_hd__dfrtp_2_29_D;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_3_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__nor3_2_2_B <= 1'b0;
         else       sky130_fd_sc_hd__nor3_2_2_B <= sky130_fd_sc_hd__and2b_2_9_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_0_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__nand4_2_0_C <= 1'b0;
         else       sky130_fd_sc_hd__nand4_2_0_C <= sky130_fd_sc_hd__o21a_2_4_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_0_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__inv_2_1_A <= 1'b0;
         else       sky130_fd_sc_hd__inv_2_1_A <= sky130_fd_sc_hd__o21a_2_7_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__dfrtp_2_8_CLK or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__or4_2_1_A <= 1'b0;
         else       sky130_fd_sc_hd__or4_2_1_A <= sky130_fd_sc_hd__a21o_2_0_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_0_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__or4_2_3_A <= 1'b0;
         else       sky130_fd_sc_hd__or4_2_3_A <= sky130_fd_sc_hd__a21o_2_2_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__dfrtp_2_8_CLK or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__o21a_2_5_A1 <= 1'b0;
         else       sky130_fd_sc_hd__o21a_2_5_A1 <= sky130_fd_sc_hd__dfrtp_2_4_D;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_1_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__nand4_2_2_C <= 1'b0;
         else       sky130_fd_sc_hd__nand4_2_2_C <= sky130_fd_sc_hd__o21a_2_8_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_1_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__nand4_2_1_C <= 1'b0;
         else       sky130_fd_sc_hd__nand4_2_1_C <= sky130_fd_sc_hd__o21a_2_10_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_1_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__inv_2_2_A <= 1'b0;
         else       sky130_fd_sc_hd__inv_2_2_A <= sky130_fd_sc_hd__o21a_2_9_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__dfrtp_2_8_CLK or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__nand4_2_3_C <= 1'b0;
         else       sky130_fd_sc_hd__nand4_2_3_C <= sky130_fd_sc_hd__o21a_2_5_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_0_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__inv_2_3_A <= 1'b0;
         else       sky130_fd_sc_hd__inv_2_3_A <= sky130_fd_sc_hd__o21a_2_6_X;
     end
 
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_7_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__xor2_2_17_B <= 1'b1;
         else       sky130_fd_sc_hd__xor2_2_17_B <= sky130_fd_sc_hd__dfstp_2_0_D;
     end
 
-    always @(posedge sky130_fd_sc_hd__dfxtp_2_3_CLK or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__xor2_2_16_A <= 1'b1;
         else       sky130_fd_sc_hd__xor2_2_16_A <= sky130_fd_sc_hd__o221a_2_1_X;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_7_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__xor2_2_20_A <= 1'b1;
         else       sky130_fd_sc_hd__xor2_2_20_A <= sky130_fd_sc_hd__dfstp_2_2_D;
     end
 
-    always @(posedge sky130_fd_sc_hd__clkbuf_8_7_X or negedge rst_n) begin
+    always @(posedge clk or negedge rst_n) begin
         if (!rst_n) sky130_fd_sc_hd__or2_2_12_A <= 1'b1;
         else       sky130_fd_sc_hd__or2_2_12_A <= sky130_fd_sc_hd__o32a_2_3_X;
     end
