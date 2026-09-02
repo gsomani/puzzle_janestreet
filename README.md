@@ -19,7 +19,7 @@ We found the solution with the following broad steps (more details being added s
 NOTE: Although the solution here relies on a SAT solver, we are interested mapping out the full chip (See [Open Threads and Future Work](#open-threads-and-future-work))
 
 # Winning Sequence
-Winning sequnce we found for `I` that makes `success`=1 is is 122 bits long:
+The winning sequnce we found for `I` that makes `success`=1 is 122 bits long:
 ```
 00000001010100001000000000000101010100000000000010100000010000010000001000001010000100000001000000100000100100010100000001
 ```
