@@ -11,9 +11,8 @@ We found the solution with the following broad steps (more details being added s
 - Parsing the SPICE --> verilog (a parser built with python)
 - Testing our parsed Verilog (Verilator + GTWave)
 - Mapping out the logic that drives `success`
-    - The entire logic for evaluating `success` runs periodically every 122 clock cycles - so that hints that the winning `I` is indeed 122 bits long!
-    - Compiling a CNF expression for `success`
-        - The depth of the CNF is bounded to 122, from the observation about the 122-cycle length evaluation window.
+    - The entire logic for evaluating `success` runs periodically every 122 clock cycles - so that hints that the winning `I` must be 122 bits long (rules out any brute-forcing)
+    - Compiling a CNF expression for `success`. The observation about the 122-cycle length evaluation window bounds the depth of the CNF to 122.
         - (CNF: Conjunctive Normal Form, a canonical way of listing complex boolean expressions in product-of-sum clauses)
 - Running a SAT solver (we used `minisat`) to examine satisfiability of the `success` flag
 
