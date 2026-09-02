@@ -13,6 +13,7 @@ We found the solution with the following broad steps (more details being added s
 - Mapping out the logic that drives `success`
     - The entire logic for evaluating `success` runs periodically every 122 clock cycles - so that hints that the winning `I` is indeed 122 bits long!
     - Compiling a CNF expression for `success`
+        - The depth of the CNF is bounded to 122, from the observation about the 122-cycle length evaluation window.
         - (CNF: Conjunctive Normal Form, a canonical way of listing complex boolean expressions in product-of-sum clauses)
 - Running a SAT solver (we used `minisat`) to examine satisfiability of the `success` flag
 
