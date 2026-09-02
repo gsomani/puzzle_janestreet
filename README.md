@@ -2,7 +2,7 @@
 This is our attempt at cracking the [Jane Street ASIC Reverse-Engineering Challenge](https://blog.janestreet.com/can-you-reverse-engineer-an-asic/): Reverse engineering an ASIC from its raw GDSII layout!
 
 
-| Top level chip-layout | A closer look of core sub-units|
+| Top level chip-layout | A closer look at the core sub-units|
 |-|-|
 |![layout__puzzle.png.png](images/layout__puzzle.png)|![gds__puzzle.png](images/gds__puzzle.png)|
 
