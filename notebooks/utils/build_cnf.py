@@ -1,7 +1,7 @@
 import re, time
 from bool_parser import parse_expr, flatten_nary, sanitize
 
-src = open('/mnt/project/puzzle_readable.v').read()
+src = open('../inputs/puzzle.v').read()
 lines = [re.sub(r'//.*', '', l) for l in src.splitlines()]
 src = '\n'.join(lines)
 
@@ -166,7 +166,7 @@ success_lit = reg_val['success']
 cnf.add(success_lit)
 
 # ---- write DIMACS CNF ----
-out_path = '/home/claude/puzzle_success.cnf'
+out_path = '../inputs/puzzle_success.cnf'
 with open(out_path, 'w') as f:
     f.write(f"c Puzzle success=1 SAT instance\n")
     f.write(f"c Free variables: I_0 .. I_{T-1} (the serial input bit stream), one per clock cycle 0..{T-1}\n")
@@ -182,8 +182,8 @@ with open(out_path, 'w') as f:
 print("Wrote", out_path)
 
 # save the I-variable map separately too, for easy decoding of a solver's model
-with open('/home/claude/puzzle_success.varmap.txt', 'w') as f:
+with open('../inputs/puzzle_success.varmap.txt', 'w') as f:
     for t, v in enumerate(I_vars):
         f.write(f"I_{t} {v}\n")
     f.write(f"success_at_cycle_{T-1} {success_lit}\n")
-print("Wrote /home/claude/puzzle_success.varmap.txt")
+print("Wrote puzzle_success.varmap.txt")

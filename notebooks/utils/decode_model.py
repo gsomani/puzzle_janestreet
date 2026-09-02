@@ -21,10 +21,8 @@ This script expects a plain-text file of the model: either
   - the raw "SAT\\n v1 v2 -v3 ...\\n" format some solvers print to stdout.
 """
 import sys
-sys.path.insert(0, '/home/claude')
-from sim_from_verilog import Sim
 
-def load_varmap(path='/home/claude/puzzle_success.varmap.txt'):
+def load_varmap(path='inputs/puzzle_success.varmap.txt'):
     I_var = {}
     success_var = None
     with open(path) as f:
@@ -46,21 +44,7 @@ def decode(model_path):
     model = load_model(model_path)
     T = len(I_var)
     I_seq = [1 if model.get(I_var[t], False) else 0 for t in range(T)]
-
-    s = Sim()
-    s.step(0, 0, 0)
-    env = None
-    for t in range(T):
-        env = s.step(I_seq[t], 1, 1)
-    print("Decoded I sequence (bit per cycle 0..%d):" % (T - 1))
-    print(''.join(map(str, I_seq)))
-    print("Re-simulated success:", s.regs['success'])
-    O = 0
-    for k in range(7, -1, -1):
-        O = (O << 1) | env.get(f'O_{k}_', 0)
-    print("Final O byte:", O, chr(O) if 32 <= O <= 126 else '(non-printable)')
-    if success_var is not None:
-        print("Model's claimed success var value:", model.get(success_var))
+    print(I_seq)
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
