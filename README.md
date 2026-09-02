@@ -42,10 +42,9 @@ Here are some WIP threads that we're continuing on:
 - Are there multiple solutions to `I`? (SAT doesnt guarantee uniqueness)
 
 # TODO:
-- [ ] Screenshot of two stars 
-- [ ] Screenshot of GDS 
+Need to add more extensive debbugging notes
 - Add notes about the period hunting (+screenshots)
+    - This gave insight into he nature of the hash function being used inside
 - Show how the `success` logic is gated to evaluate every 122 cycles
     - This is clear from the behavior of `~or2_2_11_B & or2_2_11_A`
-- GDS pictures
 
