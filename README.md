@@ -38,7 +38,7 @@ Winning sequnce we found for `I` that makes `success`=1 is is 122 bits long:
 Here are some WIP threads that we're continuing on:
 - Decoding the entire FSM
 - Understanding the exact hashing algorithm 
-    - (we think this is implementing a [sponge function](https://en.wikipedia.org/wiki/Sponge_function), based on the 11-cycle internal periods we've seen)
+    - (This chip is very likely implementing a [sponge function](https://en.wikipedia.org/wiki/Sponge_function), based on the 11-cycle internal periods we've seen. There are also other families showing periods of 8,16,and 44)
 - Working out how exactly the hash of the passphrase is encoded into the netlist
 - Are there multiple solutions to `I`? (SAT doesnt guarantee uniqueness)
 
