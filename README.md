@@ -1,5 +1,5 @@
 # Chasing `success`: Jane Street ASIC Reverse-Engineering Challenge
-This is our attempt at cracking the [Jane Street ASIC Reverse-Engineering Challenge](https://blog.janestreet.com/can-you-reverse-engineer-an-asic/): Reverse engineering a sky130 from its bare GDSII layout!
+This is our attempt at cracking the [Jane Street ASIC Reverse-Engineering Challenge](https://blog.janestreet.com/can-you-reverse-engineer-an-asic/): Reverse engineering an ASIC from its raw GDSII layout!
 
 
 | Top level chip-layout | A closer look of core sub-units|
@@ -12,7 +12,8 @@ We found the solution with the following broad steps (more details being added s
 - Testing our parsed Verilog (Verilator + GTWave)
 - Mapping out the logic that drives `success`
     - The entire logic for evaluating `success` runs periodically every 122 clock cycles - so that hints that the winning `I` is indeed 122 bits long!
-    - Compiling a CNF (AKA Conjunctive Normal Form, a canonical way of listing complex boolean expressions) expression for `success`
+    - Compiling a CNF expression for `success`
+        - (CNF: Conjunctive Normal Form, a canonical way of listing complex boolean expressions in product-of-sum clauses)
 - Running a SAT solver (we used `minisat`) to examine satisfiability of the `success` flag
 
 NOTE: Although the solution here relies on a SAT solver, we are interested mapping out the full chip (See [Open Threads and Future Work](#open-threads-and-future-work))
