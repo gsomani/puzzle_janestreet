@@ -1,6 +1,10 @@
 # Chasing `success`: Jane Street ASIC Reverse-Engineering Challenge
 This is our attempt at cracking the [Jane Street ASIC Reverse-Engineering Challenge](https://blog.janestreet.com/can-you-reverse-engineer-an-asic/): Reverse engineering a sky130 from its bare GDSII layout!
-![image.png](attachment:images/gds__puzzle.png)
+
+
+| Top level chip-layout | A closer look of core sub-units|
+|-|-|
+|![layout__puzzle.png.png](images/layout__puzzle.png)|![gds__puzzle.png](images/gds__puzzle.png)|
 
 We found the solution with the following broad steps (more details being added soon!):
 - Converting the GDS into a SPICE Netlist (essentially LVS extraction with magic)
@@ -20,7 +24,7 @@ Winning sequnce we found for `I` that makes `success`=1 is is 122 bits long:
 ```
 - The chip also puts out the following output message on the `O` pins: `(* TWO STARS *)`
 
-![image.png](attachment:images/waves__two_stars.png)
+![waves__two_stars.png](images/waves__two_stars.png)
 
 # Easter Eggs
 | Input  `I`  | Message in output `O` |
