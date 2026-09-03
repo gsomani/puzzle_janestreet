@@ -16,7 +16,7 @@ We found the solution with the following broad steps (more details being added s
         - (CNF: Conjunctive Normal Form, a canonical way of listing complex boolean expressions in product-of-sum clauses)
 - Running a SAT solver (we used `minisat`) to examine satisfiability of the `success` flag
 
-NOTE: Although the solution here relies on a SAT solver, we are interested mapping out the full chip (See [Open Threads and Future Work](#open-threads-and-future-work))
+NOTE: Although the SAT solver provides the required solution, we are still interested in mapping out the full chip (See [Open Threads and Future Work](#open-threads-and-future-work))
 
 # Winning Sequence
 The winning sequnce we found for `I` that makes `success`=1 is 122 bits long:
