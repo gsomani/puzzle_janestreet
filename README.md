@@ -15,13 +15,15 @@ We found the solution with the following broad steps (more details being added s
     - Compiling a CNF expression for `success`. The observation about the 122-cycle length evaluation window bounds the depth of the CNF to 122.
         - (CNF: Conjunctive Normal Form, a canonical way of listing complex boolean expressions in product-of-sum clauses)
 - Running a SAT solver (we used `minisat`) to examine satisfiability of the `success` flag
-
+- We have indications that the exact FSM inside is running a constraint-checker on a visual pattern that `I` represents on a 11x11 grid
+      - A 8-bit LFSR mixes a seed value `0xA5` (we found this in the netlist) with the incoming stream `I`
+      - Similar to the [Queens](https://www.linkedin.com/games/queens/) game on LinkedIn!
 NOTE: Although the SAT solver provides the required solution, we are still interested in mapping out the full chip (See [Open Threads and Future Work](#open-threads-and-future-work))
 
 # Winning Sequence
-The winning sequnce we found for `I` that makes `success`=1 is 122 bits long:
+The winning sequence we found for `I` that makes `success`=1 is 121 bits long:
 ```
-00000001010100001000000000000101010100000000000010100000010000010000001000001010000100000001000000100000100100010100000001
+0000000101010000100000000000010101010000000000001010000001000001000000100000101000010000000100000010000010010001010000000
 ```
 - The chip also puts out the following output message on the `O` pins: `(* TWO STARS *)`
 
