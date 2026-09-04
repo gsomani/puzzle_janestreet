@@ -19,10 +19,11 @@ int main(int argc, char **argv) {
     tick(tc,tb,traceObj);
   tb->rst_n = 1;
   tick(tc,tb,traceObj);
+  tick(tc,tb,traceObj);
   
   for(int i=0 ; i<121; i++)
   {
-    tb->I      = I[i];
+    tb->I      = 0;//I[i];
     tb->enable = 1;
     tick(tc,tb,traceObj);
   }
@@ -31,4 +32,5 @@ int main(int argc, char **argv) {
   
   while(tb->O)
     tick(tc,tb,traceObj);
+
 }

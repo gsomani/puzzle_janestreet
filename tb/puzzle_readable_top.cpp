@@ -20,7 +20,7 @@ int main(int argc, char **argv) {
   tb->rst_n = 1;
   tick(tc,tb,traceObj);
   
-  for(int i=0 ; i<121; i++)
+  for(int i=0 ; i<122; i++)
   {
     tb->I      = I[i];
     tb->enable = 1;
