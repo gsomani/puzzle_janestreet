@@ -16,8 +16,8 @@ We found the solution with the following broad steps (more details being added s
         - (CNF: Conjunctive Normal Form, a canonical way of listing complex boolean expressions in product-of-sum clauses)
 - Running a SAT solver (we used `minisat`) to examine satisfiability of the `success` flag
 - We have indications that the exact FSM inside is running a constraint-checker on a visual pattern that `I` represents on a 11x11 grid
-      - A 8-bit LFSR mixes a seed value `0xA5` (we found this in the netlist) with the incoming stream `I`
-      - Similar to the [Queens](https://www.linkedin.com/games/queens/) game on LinkedIn!
+    - A 8-bit LFSR mixes a seed value `0xA5` (we found this in the netlist) with the incoming stream `I`
+    - Similar to the [Queens](https://www.linkedin.com/games/queens/) game on LinkedIn!
 NOTE: Although the SAT solver provides the required solution, we are still interested in mapping out the full chip (See [Open Threads and Future Work](#open-threads-and-future-work))
 
 # Winning Sequence
